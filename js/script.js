@@ -36,12 +36,16 @@ $(document).ready(
         var html = template(context);
         $("#todo").append(html);
 
+
         $(".delete").click(
           function() {
             $(this).parent().remove();
           }
         );
 
+        $('#textInput').val('');
+
+        // $("#todo").val(" ");
       }
     });
 
