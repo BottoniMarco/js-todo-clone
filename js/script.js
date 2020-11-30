@@ -24,6 +24,27 @@ $(document).ready(
       }
     );
 
+    $('input').keypress(function(event){
+      console.log("press ",event.which);
+      if (event.which == 13) {
+        var nuovaAttivita = $("[name = 'attivita']").val();
+        console.log(nuovaAttivita);
+
+        var context = {
+          text : nuovaAttivita
+        };
+        var html = template(context);
+        $("#todo").append(html);
+
+        $(".delete").click(
+          function() {
+            $(this).parent().remove();
+          }
+        );
+
+      }
+    });
+
 
   }
 );
