@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 50px;
+}
+
+input {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+ul {
+  margin: 100px;
+}
+
+li {
+  font-size : 22px;
+}
+
+.delete {
+  cursor: pointer;
+  color: red;
+}
